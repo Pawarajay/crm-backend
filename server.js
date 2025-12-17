@@ -199,7 +199,7 @@ const FRONTEND_URL = (process.env.FRONTEND_URL || "https://crm-frontend-delta-tw
 const allowedOrigins = [
   FRONTEND_URL,
   'http://localhost:3000',
-  'http://localhost:5173', // Vite default
+  'https://crm-frontend-delta-two.vercel.app', // Vite default
 ];
 
 // ✅ IMPROVED CORS Configuration
