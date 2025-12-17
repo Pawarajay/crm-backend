@@ -1,18 +1,31 @@
 const mysql = require("mysql2/promise")
 require("dotenv").config()
 
+// const dbConfig = {
+//   host: process.env.DB_HOST || "localhost",
+//   user: process.env.DB_USER || "root",
+//   password: process.env.DB_PASSWORD || "",
+//   database: process.env.DB_NAME || "railway",
+//   port: process.env.DB_PORT || 3306,
+//   waitForConnections: true,
+//   connectionLimit: 10,
+//   queueLimit: 0,
+// }
+
+// Create connection pool
+
+
+
 const dbConfig = {
   host: process.env.DB_HOST || "localhost",
   user: process.env.DB_USER || "root",
   password: process.env.DB_PASSWORD || "",
-  database: process.env.DB_NAME || "vasify_crm",
-  port: process.env.DB_PORT || 3306,
+  database: process.env.DB_NAME || "railway",
+  port: process.env.DB_PORT || 36533,
   waitForConnections: true,
   connectionLimit: 10,
   queueLimit: 0,
 }
-
-// Create connection pool
 const pool = mysql.createPool(dbConfig)
 
 // Test connection
